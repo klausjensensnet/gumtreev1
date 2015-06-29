@@ -5,7 +5,7 @@ import scraperwiki
 from urllib import urlopen
 from BeautifulSoup import BeautifulSoup
 
-webpage = urlopen('http://johannesburg.gumtree.co.za/f-Jobs-W0QQAdTypeZ1QQCatIdZ8').read()
+webpage = urlopen('http://www.gumtree.com/search?q=boxster&tq=%7B%22i%22%3A%22boxster%22%2C%22s%22%3A%22boxster%22%2C%22p%22%3A0%2C%22t%22%3A13%7D&search_category=porsche&search_location=&distance=0.0001').read()
 
 soup = BeautifulSoup(webpage)
 # get the link to the profile page
